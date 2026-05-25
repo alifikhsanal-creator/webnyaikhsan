@@ -14,13 +14,36 @@ function toggleMenu() {
     });
     hiddenElements.forEach((el) => observer.observe(el));
     
-   function kirimData(){
-  let nama = document.getElementById("nama").value;
-  let email = document.getElementById("email").value;
-  let pesan = document.getElementById("pesan").value;
-  console.log("Nama:", nama);
-  console.log("Email:", email);
-  console.log("Pesan:", pesan);
+   <button type="button" onclick="kirimPesan()">
+  Kirim
+</button>
+
+function kirimPesan(){
+
+  let nama =
+  document.getElementById("nama").value;
+
+  let email =
+  document.getElementById("email").value;
+
+  let pesan =
+  document.getElementById("pesan").value;
+
+  if(nama === "" || email === "" || pesan === ""){
+
+    alert("Isi semua data!");
+
+  } else {
+
+    alert("Pesan berhasil dikirim!");
+
+    // Menghapus isi form
+    document.getElementById("nama").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("pesan").value = "";
+
+  }
+
 }
 // Sosial Media
     function instagram(){
