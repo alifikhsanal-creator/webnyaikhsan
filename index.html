@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+</head>
+<body>
+    <header>
+    <div class="logo">Portofolio</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <div>
+      <span class="theme-toggle" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+      </span>
+      <span class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+    </div>
+  </header>
+  <section class="hero" id="home">
+    <div class="hero-text hidden">
+      <h1>Halo, Saya <span>Alif Ikhsan Al Munawar</span></h1>
+      <p>
+        Seorang Desainer Grafis dan Teknisi TKJ yang memiliki minat dalam dunia desain, website, dan teknologi digital.
+      </p>
+      <div class="btn-group">
+        <a href="#projects" class="btn primary">Lihat Project</a>
+        <a href="#contact" class="btn secondary">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-image hidden">
+      <img src="gambar/gambar_1.jpeg" alt="Profile">
+    </div>
+  </section>
+  <section id="about">
+    <h2 class="title hidden">Tentang Saya</h2>
+    <div class="about">
+      <div class="about-card hidden">
+        <p>
+          Saya merupakan siswa jurusan Teknik Komputer dan Jaringan yang menyukai pengembangan website, desain UI/UX, dan editing visual. Saya senang membuat tampilan website modern yang responsive dan menarik.
+        </p>
+      </div>
+      <div class="about-card hidden">
+        <p>
+          Saya memiliki kemampuan dalam HTML, CSS, JavaScript, desain grafis, serta dasar jaringan komputer. Saya juga suka membuat project kreatif seperti dashboard, game sederhana, dan aplikasi web.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2 class="title hidden">Skill Saya</h2>
+    <div class="skills">
+      <div class="skill-card hidden">
+        <h3>HTML</h3>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:95%"></div>
+        </div>
+      </div>
+      <div class="skill-card hidden">
+        <h3>CSS</h3>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:90%"></div>
+        </div>
+      </div>
+      <div class="skill-card hidden">
+        <h3>JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:80%"></div>
+        </div>
+      </div>
+      <div class="skill-card hidden">
+        <h3>Desain Grafis</h3>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:85%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2 class="title hidden">Project Saya</h2>
+    <div class="projects">
+      <div class="project-card hidden">
+        <img src="gambar/web.jpg" alt="Project">
+        <div class="project-content">
+          <h3>Website Development</h3>
+          <p>Membuat website modern menggunakan HTML, CSS, dan JavaScript.</p>
+          <a href="#" class="btn primary">Detail</a>
+        </div>
+      </div>
+      <div class="project-card hidden">
+        <img src="gambar/game2.png" alt="Project">
+        <div class="project-content">
+          <h3>Game Development</h3>
+          <p>Game petualangan sederhana berbasis JavaScript yang bisa dimainkan di HP.</p>
+          <a href="#" class="btn primary">Detail</a>
+        </div>
+      </div>
+      <div class="project-card hidden">
+        <img src="gambar/gambar_desain.jpg" alt="Project">
+        <div class="project-content">
+          <h3>Desain Grafis</h3>
+          <p>Desainer brand logo, poster, dan lain-lain.</p>
+          <a href="#" class="btn primary">Detail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+     <div class="container">
+    <h2>Form Kontak</h2>
+    <!-- Input Nama -->
+    <input type="text" id="nama" placeholder="Masukkan Nama">
+    <!-- Input Email -->
+    <input type="email" id="email" placeholder="Masukkan Email">
+    <!-- Input Pesan -->
+    <textarea id="pesan" placeholder="Masukkan Pesan"></textarea>
+    <!-- Tombol -->
+    <button type="button" onclick="kirimData()">
+      Kirim
+    </button>
+  </div>
+      </div>
+    </div>
+  </section>
+   <!-- SOSMED -->
+    <div class="sosmed">
+
+      <i class="fa-brands fa-instagram"
+      onclick="instagram()"></i>
+
+      <i class="fa-brands fa-youtube"
+      onclick="youtube()"></i>
+
+      <i class="fa-brands fa-tiktok"
+      onclick="tiktok()"></i>
+
+    </div>
+  <footer>
+    <p>© 2026 Alif Ikhsan Al Munawar</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
