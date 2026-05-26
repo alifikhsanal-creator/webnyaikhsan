@@ -18,14 +18,32 @@ function toggleMenu() {
   Kirim
 </button>
 
-function kirimData(){
-  let nama = document.getElementById("nama").value;
-  let email = document.getElementById("email").value;
-  let pesan = document.getElementById("pesan").value;
-  console.log("Nama:", nama);
-  console.log("Email:", email);
-  console.log("Pesan:", pesan);
-}
+// Form kontak
+    function kirimPesan(){
+
+      let nama =
+      document.getElementById("nama").value;
+
+      let email =
+      document.getElementById("email").value;
+
+      let pesan =
+      document.getElementById("pesan").value;
+
+      if(nama === "" || email === "" || pesan === ""){
+
+        alert("Semua data wajib diisi!");
+
+      } else {
+
+        alert("Pesan berhasil dikirim!");
+
+        // Reset input
+        document.getElementById("nama").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("pesan").value = "";
+
+      }
 // Sosial Media
     function instagram(){
       window.open("https://www.instagram.com/alif.ikhsann_/#", "_blank");
